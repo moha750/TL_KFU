@@ -1,0 +1,97 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+}
+
+.logo {
+  width: 7%;
+  margin-top: 50px;
+}
+
+.title1 {
+  margin: 20px auto;
+  font-size: 70px;
+  background:linear-gradient(90deg,#d569f0,#455cdf);
+  width: 25%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a>i {
+  font-size: 35px;
+  padding: 10px;
+  margin-right:20px ;
+  margin-left:20px ;
+  color: #d569f0;
+  width:40px;
+  height: 40px;
+  background-color: #f5d5fc;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+a>i:hover {
+  background-color: #455cdf;
+  font-size: 35px;
+  padding: 10px;
+  margin-right:20px ;
+  margin-left:20px ;
+  color: white;
+  transition: 0.8s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.wave {
+  width: 100%;
+}
+
+main {
+  background-color: #d569f0;
+  position: relative;
+  bottom: 4px;
+}
+
+.g {
+  width: 20%;
+  margin: 0 auto;
+  display:block;
+}
+
+.g2 {
+  font-size: 60px;
+  margin: 20px;
+  color: white;
+}
+
+
+.img {
+  width: 60%;
+  margin: 70px;
+  text-align: center;
+}
+
+.three {
+  display:block;
+}
+
+.name {
+  border: 5px solid #455cdf;
+  width: 600px;
+  height: 60px;
+  border-radius: 15px;
+  display:block ;
+  margin: 0px auto;
+}
+
+.bt {
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  margin-left:20px ;
+  margin-right: 20px;
+  border: 3px solid #455cdf;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 100px;
+}

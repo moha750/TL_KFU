@@ -7,8 +7,6 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <script src="script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
 </head>
 
  <body>
@@ -27,12 +25,11 @@
   <main>
   <img class="g" src="g.png" alt="">
   <h1 class="g2">معايدة نادي تِرحال</h1>
-  <img id="image" class="img" src="2.jpg">
-  <div class="three">
-    <input class="name" type="text" id="message" placeholder="أكتب الأسم هنا">
-  <button class="bt" id="save">حذف</button>
-  <button class="bt" id="submit"> تطبيق </button>
-</div>
+  <div style="position: relative;">
+    <canvas id="canvas" height="1688px" width="1688px"></canvas>
+    <input id="name" type='text' placeholder="أكتب الأسم هنا">
+    <a href="#" id="Download">تحميل الصورة</a>  
+  </div>
 
   <div class="footer">
     <h1><i class="fa-regular fa-copyright"></i> جميع الحقوق محفوظة لنادي ترحال </h1>
@@ -40,7 +37,7 @@
   </div>
 </main>
 
+<script src="script.js"></script>
 </body>
 
 </html>
-

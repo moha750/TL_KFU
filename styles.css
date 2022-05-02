@@ -6,11 +6,6 @@
 }
 
 @font-face {
-  font-family:Ulamjad ;
-  src: url(FONT/Ulamjad.ttf);
-}
-
-@font-face {
   font-family: TheSans;
   src: url(FONT/TheSans-Bold.otf);
 }
@@ -76,17 +71,13 @@ main {
 }
 
 
-.img {
+canvas {
   width: 60%;
   margin: 70px;
   text-align: center;
 }
 
-.three {
-  display:block;
-}
-
-.name {
+#name {
   border: 5px solid #455cdf;
   width: 800px;
   height: 80px;
@@ -96,17 +87,21 @@ main {
   font-size: 25px;
 }
 
-.bt {
+#Download {
   margin-top: 30px;
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 40px;
   margin-left:20px ;
   margin-right: 20px;
-  border: 3px solid #455cdf;
+  border: 5px solid #455cdf;
   border-radius: 10px;
   background-color: white;
   margin-bottom: 100px;
   font-size: 25px;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  margin: 50px auto;
 }
 
 .footer {
@@ -171,7 +166,7 @@ main {
     -webkit-text-fill-color: transparent;
   }
 
-  .name {
+  #name {
     border: 5px solid #455cdf;
     width: 600px;
     height: 60px;
@@ -231,13 +226,13 @@ main {
   }
   
   
-  .img {
+  canvas {
     width: 80%;
     margin: 70px;
     text-align: center;
   }
 
-  .name {
+  #name {
     border: 5px solid #455cdf;
     width: 550px;
     height: 60px;
@@ -264,7 +259,7 @@ main {
     background-color: #455cdf;
     padding: 40px;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -297,20 +292,20 @@ main {
   }
   
   
-  .img {
+  canvas {
     width: 80%;
-    margin: 70px;
-    margin: 30px auto;
+    margin: 50px auto;
+    text-align: center;
   }
 
-  .name {
+  #name {
     border: 5px solid #455cdf;
     width: 400px;
-    height: 60px;
+    height: 50px;
     border-radius: 15px;
     display:block ;
     margin: 0px auto;
-    font-size: 20px;
+    font-size: 23px;
   }
   
   .bt {
@@ -330,7 +325,7 @@ main {
     background-color: #455cdf;
     padding: 40px;
     color: white;
-    font-size: 11px;
+    font-size: 15px;
   }
 }
 
@@ -387,20 +382,36 @@ main {
   }
   
   
-  .img {
+  canvas {
     width: 90%;
-    margin: 70px;
-    margin: 30px auto;
+    margin: 50px auto;
+    text-align: center;
   }
 
-  .name {
+  #name {
     border: 5px solid #455cdf;
     width: 300px;
-    height: 60px;
+    height: 35px;
     border-radius: 15px;
     display:block ;
     margin: 0px auto;
-    font-size: 18px;
+    font-size: 20px;
+  }
+  #Download {
+    margin-top: 30px;
+    width: 180px;
+    height: 35px;
+    margin-left:20px ;
+    margin-right: 20px;
+    border: 5px solid #455cdf;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 100px;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    margin: 50px auto;
   }
   
   .bt {

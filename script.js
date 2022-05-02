@@ -1,40 +1,27 @@
-document.addEventListener('DOMContentLoaded', function() {
-    
-    Caman('#image', function() {
-        this.revert(true);
-    });
+const canvas = document.getElementById('canvas')
+const ctx = canvas.getContext('2d')
+const nameInput = document.getElementById('name')
+const Download = document.getElementById('Download')
 
-    var textInput = document.getElementById("message");
+const image = new Image()
+image.src = 'certificate.jpg'
+image.onload = function () {
+	drawImage()
+}
 
-    function applyText() {
-        var canvas = document.getElementById("image");
-        var ctx = canvas.getContext('2d');
-        ctx.fillStyle = "rgba(0,0,0,0)";
-        var boxTop =(canvas.height/2.2)-30;
-        ctx.fillRect(0, boxTop, canvas.width, 65);
-        ctx.font = "70px TheSans";
-        ctx.fillStyle = "white";
-        ctx.textAlign = "center";
-        ctx.fillText(textInput.value, canvas.width/1.9, boxTop+50);
-    };
+function drawImage() {
+	// ctx.clearRect(0, 0, canvas.width, canvas.height)
+	ctx.drawImage(image, 0, 0, canvas.width, canvas.height)
+	ctx.font = '60px TheSans'
+	ctx.fillStyle = '#ffffff'
+	ctx.fillText(nameInput.value, 600, 780)
+}
 
+nameInput.addEventListener('input', function () {
+	drawImage()
+})
 
-
-
-    
-    var submitText = document.getElementById('submit');
-    submitText.onclick = applyText;
-
-    var saveBtn = document.querySelector('#save');
-    saveBtn.onclick = saveBtnHandler;
-
-    function saveBtnHandler(event) {
-
-        Caman('#image', function() {
-            this.render(function() {
-                this.save('image.png');
-            });
-        });
-    }
-
-}, false);
+Download.addEventListener('click', function () {
+	Download.href = canvas.toDataURL('image/jpg')
+	Download.download = 'معايدة نادي تِرحال - ' + nameInput.value
+})
